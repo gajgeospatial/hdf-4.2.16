@@ -1,0 +1,2670 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2019_Debug|x64">
+      <Configuration>vs2019_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2019_Release|x64">
+      <Configuration>vs2019_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2022_Debug|x64">
+      <Configuration>vs2022_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2022_Release|x64">
+      <Configuration>vs2022_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F231EF2B-3FBA-3661-8764-A366CB3C7F71}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>hdfimport_files</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\hdf\src;..\..\..\mfhdf\libsrc;..\..\..\;..\..\;..\..\bin;..\..\..\..\$(JPEG_DIR);..\..\..\..\$(ZLIB_DIR);%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\hdf\src;..\..\..\mfhdf\libsrc;..\..\..\;..\..\;..\..\bin;..\..\..\..\$(JPEG_DIR);..\..\..\..\$(ZLIB_DIR);%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\hdf\src;..\..\..\mfhdf\libsrc;..\..\..\;..\..\;..\..\bin;..\..\..\..\$(JPEG_DIR);..\..\..\..\$(ZLIB_DIR);%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\hdf\src;..\..\..\mfhdf\libsrc;..\..\..\;..\..\;..\..\bin;..\..\..\..\$(JPEG_DIR);..\..\..\..\$(ZLIB_DIR);%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\hdf\src;..\..\..\mfhdf\libsrc;..\..\..\;..\..\;..\..\bin;..\..\..\..\$(JPEG_DIR);..\..\..\..\$(ZLIB_DIR);%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\hdf\src;..\..\..\mfhdf\libsrc;..\..\..\;..\..\;..\..\bin;..\..\..\..\$(JPEG_DIR);..\..\..\..\$(ZLIB_DIR);%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\hdf\src;..\..\..\mfhdf\libsrc;..\..\..\;..\..\;..\..\bin;..\..\..\..\$(JPEG_DIR);..\..\..\..\$(ZLIB_DIR);%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\hdf\src;..\..\..\mfhdf\libsrc;..\..\..\;..\..\;..\..\bin;..\..\..\..\$(JPEG_DIR);..\..\..\..\$(ZLIB_DIR);%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\21ec58d88d906f096cd7cb625939ae2f\SDSfloat2.hdf.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating SDSfloat2.hdf</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating SDSfloat2.hdf</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">Generating SDSfloat2.hdf</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\SDSfloat2.hdf .\SDSfloat2.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\SDSfloat2.hdf .\SDSfloat2.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\SDSfloat2.hdf .\SDSfloat2.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\mfhdf\hdfimport\SDSfloat2.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\..\..\mfhdf\hdfimport\SDSfloat2.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">..\..\..\mfhdf\hdfimport\SDSfloat2.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\SDSfloat2.hdf</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\SDSfloat2.hdf</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\SDSfloat2.hdf</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating SDSfloat2.hdf</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating SDSfloat2.hdf</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">Generating SDSfloat2.hdf</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\SDSfloat2.hdf .\SDSfloat2.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\SDSfloat2.hdf .\SDSfloat2.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\SDSfloat2.hdf .\SDSfloat2.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\mfhdf\hdfimport\SDSfloat2.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\..\..\mfhdf\hdfimport\SDSfloat2.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">..\..\..\mfhdf\hdfimport\SDSfloat2.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\SDSfloat2.hdf</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\SDSfloat2.hdf</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\SDSfloat2.hdf</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating SDSfloat2.hdf</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\SDSfloat2.hdf .\SDSfloat2.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">..\..\..\mfhdf\hdfimport\SDSfloat2.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\SDSfloat2.hdf</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating SDSfloat2.hdf</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\SDSfloat2.hdf .\SDSfloat2.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\..\mfhdf\hdfimport\SDSfloat2.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\SDSfloat2.hdf</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\21ec58d88d906f096cd7cb625939ae2f\SDSfloat2.tst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating SDSfloat2.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating SDSfloat2.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">Generating SDSfloat2.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\SDSfloat2.tst .\SDSfloat2.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\SDSfloat2.tst .\SDSfloat2.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\SDSfloat2.tst .\SDSfloat2.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\mfhdf\hdfimport\testfiles\SDSfloat2.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\..\..\mfhdf\hdfimport\testfiles\SDSfloat2.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">..\..\..\mfhdf\hdfimport\testfiles\SDSfloat2.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\SDSfloat2.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\SDSfloat2.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\SDSfloat2.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating SDSfloat2.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating SDSfloat2.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">Generating SDSfloat2.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\SDSfloat2.tst .\SDSfloat2.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\SDSfloat2.tst .\SDSfloat2.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\SDSfloat2.tst .\SDSfloat2.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\mfhdf\hdfimport\testfiles\SDSfloat2.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\..\..\mfhdf\hdfimport\testfiles\SDSfloat2.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">..\..\..\mfhdf\hdfimport\testfiles\SDSfloat2.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\SDSfloat2.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\SDSfloat2.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\SDSfloat2.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating SDSfloat2.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\SDSfloat2.tst .\SDSfloat2.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">..\..\..\mfhdf\hdfimport\testfiles\SDSfloat2.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\SDSfloat2.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating SDSfloat2.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\SDSfloat2.tst .\SDSfloat2.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\..\mfhdf\hdfimport\testfiles\SDSfloat2.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\SDSfloat2.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\21ec58d88d906f096cd7cb625939ae2f\SDSfloat3.hdf.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating SDSfloat3.hdf</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating SDSfloat3.hdf</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">Generating SDSfloat3.hdf</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\SDSfloat3.hdf .\SDSfloat3.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\SDSfloat3.hdf .\SDSfloat3.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\SDSfloat3.hdf .\SDSfloat3.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\mfhdf\hdfimport\SDSfloat3.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\..\..\mfhdf\hdfimport\SDSfloat3.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">..\..\..\mfhdf\hdfimport\SDSfloat3.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\SDSfloat3.hdf</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\SDSfloat3.hdf</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\SDSfloat3.hdf</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating SDSfloat3.hdf</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating SDSfloat3.hdf</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">Generating SDSfloat3.hdf</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\SDSfloat3.hdf .\SDSfloat3.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\SDSfloat3.hdf .\SDSfloat3.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\SDSfloat3.hdf .\SDSfloat3.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\mfhdf\hdfimport\SDSfloat3.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\..\..\mfhdf\hdfimport\SDSfloat3.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">..\..\..\mfhdf\hdfimport\SDSfloat3.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\SDSfloat3.hdf</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\SDSfloat3.hdf</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\SDSfloat3.hdf</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating SDSfloat3.hdf</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\SDSfloat3.hdf .\SDSfloat3.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">..\..\..\mfhdf\hdfimport\SDSfloat3.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\SDSfloat3.hdf</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating SDSfloat3.hdf</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\SDSfloat3.hdf .\SDSfloat3.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\..\mfhdf\hdfimport\SDSfloat3.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\SDSfloat3.hdf</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\21ec58d88d906f096cd7cb625939ae2f\SDSfloat3.tst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating SDSfloat3.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating SDSfloat3.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">Generating SDSfloat3.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\SDSfloat3.tst .\SDSfloat3.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\SDSfloat3.tst .\SDSfloat3.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\SDSfloat3.tst .\SDSfloat3.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\mfhdf\hdfimport\testfiles\SDSfloat3.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\..\..\mfhdf\hdfimport\testfiles\SDSfloat3.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">..\..\..\mfhdf\hdfimport\testfiles\SDSfloat3.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\SDSfloat3.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\SDSfloat3.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\SDSfloat3.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating SDSfloat3.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating SDSfloat3.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">Generating SDSfloat3.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\SDSfloat3.tst .\SDSfloat3.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\SDSfloat3.tst .\SDSfloat3.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\SDSfloat3.tst .\SDSfloat3.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\mfhdf\hdfimport\testfiles\SDSfloat3.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\..\..\mfhdf\hdfimport\testfiles\SDSfloat3.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">..\..\..\mfhdf\hdfimport\testfiles\SDSfloat3.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\SDSfloat3.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\SDSfloat3.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\SDSfloat3.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating SDSfloat3.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\SDSfloat3.tst .\SDSfloat3.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">..\..\..\mfhdf\hdfimport\testfiles\SDSfloat3.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\SDSfloat3.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating SDSfloat3.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\SDSfloat3.tst .\SDSfloat3.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\..\mfhdf\hdfimport\testfiles\SDSfloat3.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\SDSfloat3.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\21ec58d88d906f096cd7cb625939ae2f\cb16i2.tst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating cb16i2.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating cb16i2.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">Generating cb16i2.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb16i2.tst .\cb16i2.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb16i2.tst .\cb16i2.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb16i2.tst .\cb16i2.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb16i2.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb16i2.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb16i2.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\cb16i2.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\cb16i2.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\cb16i2.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating cb16i2.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating cb16i2.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">Generating cb16i2.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb16i2.tst .\cb16i2.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb16i2.tst .\cb16i2.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb16i2.tst .\cb16i2.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb16i2.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb16i2.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb16i2.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\cb16i2.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\cb16i2.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\cb16i2.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating cb16i2.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb16i2.tst .\cb16i2.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb16i2.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\cb16i2.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating cb16i2.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb16i2.tst .\cb16i2.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb16i2.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\cb16i2.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\21ec58d88d906f096cd7cb625939ae2f\cb16i3.tst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating cb16i3.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating cb16i3.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">Generating cb16i3.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb16i3.tst .\cb16i3.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb16i3.tst .\cb16i3.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb16i3.tst .\cb16i3.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb16i3.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb16i3.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb16i3.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\cb16i3.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\cb16i3.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\cb16i3.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating cb16i3.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating cb16i3.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">Generating cb16i3.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb16i3.tst .\cb16i3.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb16i3.tst .\cb16i3.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb16i3.tst .\cb16i3.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb16i3.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb16i3.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb16i3.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\cb16i3.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\cb16i3.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\cb16i3.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating cb16i3.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb16i3.tst .\cb16i3.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb16i3.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\cb16i3.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating cb16i3.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb16i3.tst .\cb16i3.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb16i3.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\cb16i3.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\21ec58d88d906f096cd7cb625939ae2f\cb32i2.tst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating cb32i2.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating cb32i2.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">Generating cb32i2.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb32i2.tst .\cb32i2.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb32i2.tst .\cb32i2.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb32i2.tst .\cb32i2.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb32i2.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb32i2.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb32i2.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\cb32i2.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\cb32i2.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\cb32i2.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating cb32i2.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating cb32i2.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">Generating cb32i2.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb32i2.tst .\cb32i2.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb32i2.tst .\cb32i2.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb32i2.tst .\cb32i2.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb32i2.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb32i2.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb32i2.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\cb32i2.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\cb32i2.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\cb32i2.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating cb32i2.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb32i2.tst .\cb32i2.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb32i2.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\cb32i2.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating cb32i2.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb32i2.tst .\cb32i2.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb32i2.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\cb32i2.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\21ec58d88d906f096cd7cb625939ae2f\cb32i3.tst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating cb32i3.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating cb32i3.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">Generating cb32i3.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb32i3.tst .\cb32i3.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb32i3.tst .\cb32i3.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb32i3.tst .\cb32i3.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb32i3.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb32i3.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb32i3.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\cb32i3.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\cb32i3.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\cb32i3.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating cb32i3.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating cb32i3.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">Generating cb32i3.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb32i3.tst .\cb32i3.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb32i3.tst .\cb32i3.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb32i3.tst .\cb32i3.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb32i3.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb32i3.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb32i3.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\cb32i3.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\cb32i3.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\cb32i3.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating cb32i3.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb32i3.tst .\cb32i3.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb32i3.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\cb32i3.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating cb32i3.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb32i3.tst .\cb32i3.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb32i3.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\cb32i3.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\21ec58d88d906f096cd7cb625939ae2f\cb32r2.tst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating cb32r2.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating cb32r2.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">Generating cb32r2.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb32r2.tst .\cb32r2.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb32r2.tst .\cb32r2.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb32r2.tst .\cb32r2.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb32r2.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb32r2.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb32r2.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\cb32r2.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\cb32r2.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\cb32r2.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating cb32r2.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating cb32r2.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">Generating cb32r2.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb32r2.tst .\cb32r2.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb32r2.tst .\cb32r2.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb32r2.tst .\cb32r2.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb32r2.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb32r2.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb32r2.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\cb32r2.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\cb32r2.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\cb32r2.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating cb32r2.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb32r2.tst .\cb32r2.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb32r2.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\cb32r2.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating cb32r2.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb32r2.tst .\cb32r2.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb32r2.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\cb32r2.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\21ec58d88d906f096cd7cb625939ae2f\cb32r3.tst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating cb32r3.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating cb32r3.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">Generating cb32r3.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb32r3.tst .\cb32r3.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb32r3.tst .\cb32r3.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb32r3.tst .\cb32r3.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb32r3.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb32r3.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb32r3.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\cb32r3.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\cb32r3.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\cb32r3.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating cb32r3.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating cb32r3.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">Generating cb32r3.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb32r3.tst .\cb32r3.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb32r3.tst .\cb32r3.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb32r3.tst .\cb32r3.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb32r3.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb32r3.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb32r3.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\cb32r3.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\cb32r3.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\cb32r3.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating cb32r3.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb32r3.tst .\cb32r3.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb32r3.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\cb32r3.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating cb32r3.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb32r3.tst .\cb32r3.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb32r3.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\cb32r3.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\21ec58d88d906f096cd7cb625939ae2f\cb64r2-n.tst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating cb64r2-n.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating cb64r2-n.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">Generating cb64r2-n.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb64r2-n.tst .\cb64r2-n.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb64r2-n.tst .\cb64r2-n.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb64r2-n.tst .\cb64r2-n.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb64r2-n.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb64r2-n.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb64r2-n.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\cb64r2-n.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\cb64r2-n.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\cb64r2-n.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating cb64r2-n.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating cb64r2-n.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">Generating cb64r2-n.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb64r2-n.tst .\cb64r2-n.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb64r2-n.tst .\cb64r2-n.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb64r2-n.tst .\cb64r2-n.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb64r2-n.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb64r2-n.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb64r2-n.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\cb64r2-n.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\cb64r2-n.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\cb64r2-n.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating cb64r2-n.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb64r2-n.tst .\cb64r2-n.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb64r2-n.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\cb64r2-n.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating cb64r2-n.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb64r2-n.tst .\cb64r2-n.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb64r2-n.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\cb64r2-n.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\21ec58d88d906f096cd7cb625939ae2f\cb64r2.tst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating cb64r2.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating cb64r2.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">Generating cb64r2.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb64r2.tst .\cb64r2.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb64r2.tst .\cb64r2.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb64r2.tst .\cb64r2.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb64r2.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb64r2.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb64r2.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\cb64r2.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\cb64r2.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\cb64r2.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating cb64r2.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating cb64r2.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">Generating cb64r2.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb64r2.tst .\cb64r2.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb64r2.tst .\cb64r2.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb64r2.tst .\cb64r2.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb64r2.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb64r2.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb64r2.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\cb64r2.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\cb64r2.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\cb64r2.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating cb64r2.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb64r2.tst .\cb64r2.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb64r2.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\cb64r2.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating cb64r2.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb64r2.tst .\cb64r2.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb64r2.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\cb64r2.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\21ec58d88d906f096cd7cb625939ae2f\cb64r2_ris.tst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating cb64r2_ris.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating cb64r2_ris.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">Generating cb64r2_ris.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb64r2_ris.tst .\cb64r2_ris.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb64r2_ris.tst .\cb64r2_ris.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb64r2_ris.tst .\cb64r2_ris.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb64r2_ris.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb64r2_ris.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb64r2_ris.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\cb64r2_ris.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\cb64r2_ris.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\cb64r2_ris.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating cb64r2_ris.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating cb64r2_ris.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">Generating cb64r2_ris.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb64r2_ris.tst .\cb64r2_ris.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb64r2_ris.tst .\cb64r2_ris.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb64r2_ris.tst .\cb64r2_ris.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb64r2_ris.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb64r2_ris.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb64r2_ris.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\cb64r2_ris.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\cb64r2_ris.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\cb64r2_ris.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating cb64r2_ris.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb64r2_ris.tst .\cb64r2_ris.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb64r2_ris.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\cb64r2_ris.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating cb64r2_ris.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb64r2_ris.tst .\cb64r2_ris.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb64r2_ris.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\cb64r2_ris.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\21ec58d88d906f096cd7cb625939ae2f\cb64r3-n.tst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating cb64r3-n.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating cb64r3-n.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">Generating cb64r3-n.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb64r3-n.tst .\cb64r3-n.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb64r3-n.tst .\cb64r3-n.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb64r3-n.tst .\cb64r3-n.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb64r3-n.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb64r3-n.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb64r3-n.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\cb64r3-n.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\cb64r3-n.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\cb64r3-n.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating cb64r3-n.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating cb64r3-n.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">Generating cb64r3-n.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb64r3-n.tst .\cb64r3-n.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb64r3-n.tst .\cb64r3-n.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb64r3-n.tst .\cb64r3-n.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb64r3-n.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb64r3-n.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb64r3-n.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\cb64r3-n.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\cb64r3-n.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\cb64r3-n.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating cb64r3-n.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb64r3-n.tst .\cb64r3-n.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb64r3-n.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\cb64r3-n.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating cb64r3-n.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb64r3-n.tst .\cb64r3-n.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb64r3-n.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\cb64r3-n.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\21ec58d88d906f096cd7cb625939ae2f\cb64r3.tst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating cb64r3.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating cb64r3.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">Generating cb64r3.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb64r3.tst .\cb64r3.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb64r3.tst .\cb64r3.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb64r3.tst .\cb64r3.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb64r3.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb64r3.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb64r3.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\cb64r3.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\cb64r3.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\cb64r3.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating cb64r3.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating cb64r3.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">Generating cb64r3.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb64r3.tst .\cb64r3.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb64r3.tst .\cb64r3.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb64r3.tst .\cb64r3.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb64r3.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb64r3.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb64r3.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\cb64r3.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\cb64r3.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\cb64r3.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating cb64r3.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb64r3.tst .\cb64r3.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb64r3.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\cb64r3.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating cb64r3.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\cb64r3.tst .\cb64r3.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\..\mfhdf\hdfimport\testfiles\cb64r3.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\cb64r3.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\21ec58d88d906f096cd7cb625939ae2f\ctxtr2.tst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ctxtr2.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating ctxtr2.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">Generating ctxtr2.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\ctxtr2.tst .\ctxtr2.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\ctxtr2.tst .\ctxtr2.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\ctxtr2.tst .\ctxtr2.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\mfhdf\hdfimport\testfiles\ctxtr2.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\..\..\mfhdf\hdfimport\testfiles\ctxtr2.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">..\..\..\mfhdf\hdfimport\testfiles\ctxtr2.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\ctxtr2.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\ctxtr2.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\ctxtr2.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ctxtr2.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating ctxtr2.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">Generating ctxtr2.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\ctxtr2.tst .\ctxtr2.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\ctxtr2.tst .\ctxtr2.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\ctxtr2.tst .\ctxtr2.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\mfhdf\hdfimport\testfiles\ctxtr2.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\..\..\mfhdf\hdfimport\testfiles\ctxtr2.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">..\..\..\mfhdf\hdfimport\testfiles\ctxtr2.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\ctxtr2.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\ctxtr2.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\ctxtr2.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ctxtr2.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\ctxtr2.tst .\ctxtr2.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">..\..\..\mfhdf\hdfimport\testfiles\ctxtr2.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\ctxtr2.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ctxtr2.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\ctxtr2.tst .\ctxtr2.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\..\mfhdf\hdfimport\testfiles\ctxtr2.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\ctxtr2.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\21ec58d88d906f096cd7cb625939ae2f\ctxtr2_ris.tst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ctxtr2_ris.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating ctxtr2_ris.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">Generating ctxtr2_ris.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\ctxtr2_ris.tst .\ctxtr2_ris.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\ctxtr2_ris.tst .\ctxtr2_ris.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\ctxtr2_ris.tst .\ctxtr2_ris.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\mfhdf\hdfimport\testfiles\ctxtr2_ris.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\..\..\mfhdf\hdfimport\testfiles\ctxtr2_ris.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">..\..\..\mfhdf\hdfimport\testfiles\ctxtr2_ris.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\ctxtr2_ris.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\ctxtr2_ris.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\ctxtr2_ris.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ctxtr2_ris.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating ctxtr2_ris.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">Generating ctxtr2_ris.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\ctxtr2_ris.tst .\ctxtr2_ris.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\ctxtr2_ris.tst .\ctxtr2_ris.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\ctxtr2_ris.tst .\ctxtr2_ris.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\mfhdf\hdfimport\testfiles\ctxtr2_ris.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\..\..\mfhdf\hdfimport\testfiles\ctxtr2_ris.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">..\..\..\mfhdf\hdfimport\testfiles\ctxtr2_ris.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\ctxtr2_ris.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\ctxtr2_ris.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\ctxtr2_ris.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ctxtr2_ris.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\ctxtr2_ris.tst .\ctxtr2_ris.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">..\..\..\mfhdf\hdfimport\testfiles\ctxtr2_ris.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\ctxtr2_ris.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ctxtr2_ris.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\ctxtr2_ris.tst .\ctxtr2_ris.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\..\mfhdf\hdfimport\testfiles\ctxtr2_ris.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\ctxtr2_ris.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\21ec58d88d906f096cd7cb625939ae2f\ctxtr3.tst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ctxtr3.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating ctxtr3.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">Generating ctxtr3.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\ctxtr3.tst .\ctxtr3.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\ctxtr3.tst .\ctxtr3.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\ctxtr3.tst .\ctxtr3.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\mfhdf\hdfimport\testfiles\ctxtr3.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\..\..\mfhdf\hdfimport\testfiles\ctxtr3.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">..\..\..\mfhdf\hdfimport\testfiles\ctxtr3.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\ctxtr3.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\ctxtr3.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\ctxtr3.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ctxtr3.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating ctxtr3.tst</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">Generating ctxtr3.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\ctxtr3.tst .\ctxtr3.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\ctxtr3.tst .\ctxtr3.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\ctxtr3.tst .\ctxtr3.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\mfhdf\hdfimport\testfiles\ctxtr3.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\..\..\mfhdf\hdfimport\testfiles\ctxtr3.tst;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">..\..\..\mfhdf\hdfimport\testfiles\ctxtr3.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\ctxtr3.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\ctxtr3.tst</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\ctxtr3.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ctxtr3.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\ctxtr3.tst .\ctxtr3.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">..\..\..\mfhdf\hdfimport\testfiles\ctxtr3.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\ctxtr3.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ctxtr3.tst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\testfiles\ctxtr3.tst .\ctxtr3.tst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\..\mfhdf\hdfimport\testfiles\ctxtr3.tst;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\ctxtr3.tst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\21ec58d88d906f096cd7cb625939ae2f\hdfimport.input1.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating hdfimport.input1</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating hdfimport.input1</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">Generating hdfimport.input1</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\hdfimport.input1 .\hdfimport.input1
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\hdfimport.input1 .\hdfimport.input1
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\hdfimport.input1 .\hdfimport.input1
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\mfhdf\hdfimport\hdfimport.input1;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\..\..\mfhdf\hdfimport\hdfimport.input1;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">..\..\..\mfhdf\hdfimport\hdfimport.input1;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\hdfimport.input1</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\hdfimport.input1</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\hdfimport.input1</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating hdfimport.input1</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating hdfimport.input1</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">Generating hdfimport.input1</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\hdfimport.input1 .\hdfimport.input1
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\hdfimport.input1 .\hdfimport.input1
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\hdfimport.input1 .\hdfimport.input1
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\mfhdf\hdfimport\hdfimport.input1;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\..\..\mfhdf\hdfimport\hdfimport.input1;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">..\..\..\mfhdf\hdfimport\hdfimport.input1;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\hdfimport.input1</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\hdfimport.input1</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\hdfimport.input1</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating hdfimport.input1</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\hdfimport.input1 .\hdfimport.input1
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">..\..\..\mfhdf\hdfimport\hdfimport.input1;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\hdfimport.input1</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating hdfimport.input1</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\hdfimport.input1 .\hdfimport.input1
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\..\mfhdf\hdfimport\hdfimport.input1;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\hdfimport.input1</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\21ec58d88d906f096cd7cb625939ae2f\hdfimport.out1.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating hdfimport.out1</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating hdfimport.out1</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">Generating hdfimport.out1</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\hdfimport.out1 .\hdfimport.out1
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\hdfimport.out1 .\hdfimport.out1
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\hdfimport.out1 .\hdfimport.out1
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\mfhdf\hdfimport\hdfimport.out1;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\..\..\mfhdf\hdfimport\hdfimport.out1;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">..\..\..\mfhdf\hdfimport\hdfimport.out1;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\hdfimport.out1</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\hdfimport.out1</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\hdfimport.out1</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating hdfimport.out1</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating hdfimport.out1</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">Generating hdfimport.out1</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\hdfimport.out1 .\hdfimport.out1
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\hdfimport.out1 .\hdfimport.out1
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\hdfimport.out1 .\hdfimport.out1
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\mfhdf\hdfimport\hdfimport.out1;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\..\..\mfhdf\hdfimport\hdfimport.out1;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">..\..\..\mfhdf\hdfimport\hdfimport.out1;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\hdfimport.out1</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\hdfimport.out1</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\hdfimport.out1</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating hdfimport.out1</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\hdfimport.out1 .\hdfimport.out1
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">..\..\..\mfhdf\hdfimport\hdfimport.out1;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\hdfimport.out1</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating hdfimport.out1</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\hdfimport.out1 .\hdfimport.out1
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\..\mfhdf\hdfimport\hdfimport.out1;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\hdfimport.out1</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\21ec58d88d906f096cd7cb625939ae2f\hdfimport.out2.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating hdfimport.out2</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating hdfimport.out2</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">Generating hdfimport.out2</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\hdfimport.out2 .\hdfimport.out2
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\hdfimport.out2 .\hdfimport.out2
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\hdfimport.out2 .\hdfimport.out2
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\mfhdf\hdfimport\hdfimport.out2;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\..\..\mfhdf\hdfimport\hdfimport.out2;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">..\..\..\mfhdf\hdfimport\hdfimport.out2;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\hdfimport.out2</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\hdfimport.out2</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\hdfimport.out2</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating hdfimport.out2</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating hdfimport.out2</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">Generating hdfimport.out2</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\hdfimport.out2 .\hdfimport.out2
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\hdfimport.out2 .\hdfimport.out2
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\hdfimport.out2 .\hdfimport.out2
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\mfhdf\hdfimport\hdfimport.out2;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\..\..\mfhdf\hdfimport\hdfimport.out2;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">..\..\..\mfhdf\hdfimport\hdfimport.out2;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\hdfimport.out2</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\hdfimport.out2</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\hdfimport.out2</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating hdfimport.out2</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\hdfimport.out2 .\hdfimport.out2
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">..\..\..\mfhdf\hdfimport\hdfimport.out2;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\hdfimport.out2</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating hdfimport.out2</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\hdfimport.out2 .\hdfimport.out2
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\..\mfhdf\hdfimport\hdfimport.out2;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\hdfimport.out2</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\21ec58d88d906f096cd7cb625939ae2f\hdfimport.out3.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating hdfimport.out3</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating hdfimport.out3</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">Generating hdfimport.out3</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\hdfimport.out3 .\hdfimport.out3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\hdfimport.out3 .\hdfimport.out3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\hdfimport.out3 .\hdfimport.out3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\mfhdf\hdfimport\hdfimport.out3;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\..\..\mfhdf\hdfimport\hdfimport.out3;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">..\..\..\mfhdf\hdfimport\hdfimport.out3;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\hdfimport.out3</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\hdfimport.out3</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\hdfimport.out3</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating hdfimport.out3</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating hdfimport.out3</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">Generating hdfimport.out3</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\hdfimport.out3 .\hdfimport.out3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\hdfimport.out3 .\hdfimport.out3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\hdfimport.out3 .\hdfimport.out3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\mfhdf\hdfimport\hdfimport.out3;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\..\..\mfhdf\hdfimport\hdfimport.out3;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">..\..\..\mfhdf\hdfimport\hdfimport.out3;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\hdfimport.out3</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\hdfimport.out3</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\hdfimport.out3</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating hdfimport.out3</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\hdfimport.out3 .\hdfimport.out3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">..\..\..\mfhdf\hdfimport\hdfimport.out3;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\hdfimport.out3</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating hdfimport.out3</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdfimport\hdfimport.out3 .\hdfimport.out3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\..\mfhdf\hdfimport\hdfimport.out3;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\hdfimport.out3</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\903c20d5f434bb91ed079f1f0eff5207\hdfimport_files.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Copying files needed by hdfimport tests</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Copying files needed by hdfimport tests</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">Copying files needed by hdfimport tests</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\hdfimport.input1;.\hdfimport.out1;.\hdfimport.out3;.\SDSfloat2.hdf;.\SDSfloat3.hdf;.\ctxtr2.tst;.\ctxtr3.tst;.\cb32i2.tst;.\cb32i3.tst;.\cb16i2.tst;.\cb16i3.tst;.\cb32r2.tst;.\cb32r3.tst;.\cb64r2.tst;.\cb64r3.tst;.\cb64r2-n.tst;.\cb64r3-n.tst;.\ctxtr2_ris.tst;.\cb64r2_ris.tst;.\SDSfloat2.tst;.\SDSfloat3.tst;.\hdfimport.out2;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\hdfimport.input1;.\hdfimport.out1;.\hdfimport.out3;.\SDSfloat2.hdf;.\SDSfloat3.hdf;.\ctxtr2.tst;.\ctxtr3.tst;.\cb32i2.tst;.\cb32i3.tst;.\cb16i2.tst;.\cb16i3.tst;.\cb32r2.tst;.\cb32r3.tst;.\cb64r2.tst;.\cb64r3.tst;.\cb64r2-n.tst;.\cb64r3-n.tst;.\ctxtr2_ris.tst;.\cb64r2_ris.tst;.\SDSfloat2.tst;.\SDSfloat3.tst;.\hdfimport.out2;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\hdfimport.input1;.\hdfimport.out1;.\hdfimport.out3;.\SDSfloat2.hdf;.\SDSfloat3.hdf;.\ctxtr2.tst;.\ctxtr3.tst;.\cb32i2.tst;.\cb32i3.tst;.\cb16i2.tst;.\cb16i3.tst;.\cb32r2.tst;.\cb32r3.tst;.\cb64r2.tst;.\cb64r3.tst;.\cb64r2-n.tst;.\cb64r3-n.tst;.\ctxtr2_ris.tst;.\cb64r2_ris.tst;.\SDSfloat2.tst;.\SDSfloat3.tst;.\hdfimport.out2;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\CMakeFiles\hdfimport_files</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\CMakeFiles\hdfimport_files</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\CMakeFiles\hdfimport_files</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Copying files needed by hdfimport tests</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Copying files needed by hdfimport tests</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">Copying files needed by hdfimport tests</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\hdfimport.input1;.\hdfimport.out1;.\hdfimport.out3;.\SDSfloat2.hdf;.\SDSfloat3.hdf;.\ctxtr2.tst;.\ctxtr3.tst;.\cb32i2.tst;.\cb32i3.tst;.\cb16i2.tst;.\cb16i3.tst;.\cb32r2.tst;.\cb32r3.tst;.\cb64r2.tst;.\cb64r3.tst;.\cb64r2-n.tst;.\cb64r3-n.tst;.\ctxtr2_ris.tst;.\cb64r2_ris.tst;.\SDSfloat2.tst;.\SDSfloat3.tst;.\hdfimport.out2;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\hdfimport.input1;.\hdfimport.out1;.\hdfimport.out3;.\SDSfloat2.hdf;.\SDSfloat3.hdf;.\ctxtr2.tst;.\ctxtr3.tst;.\cb32i2.tst;.\cb32i3.tst;.\cb16i2.tst;.\cb16i3.tst;.\cb32r2.tst;.\cb32r3.tst;.\cb64r2.tst;.\cb64r3.tst;.\cb64r2-n.tst;.\cb64r3-n.tst;.\ctxtr2_ris.tst;.\cb64r2_ris.tst;.\SDSfloat2.tst;.\SDSfloat3.tst;.\hdfimport.out2;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\hdfimport.input1;.\hdfimport.out1;.\hdfimport.out3;.\SDSfloat2.hdf;.\SDSfloat3.hdf;.\ctxtr2.tst;.\ctxtr3.tst;.\cb32i2.tst;.\cb32i3.tst;.\cb16i2.tst;.\cb16i3.tst;.\cb32r2.tst;.\cb32r3.tst;.\cb64r2.tst;.\cb64r3.tst;.\cb64r2-n.tst;.\cb64r3-n.tst;.\ctxtr2_ris.tst;.\cb64r2_ris.tst;.\SDSfloat2.tst;.\SDSfloat3.tst;.\hdfimport.out2;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\CMakeFiles\hdfimport_files</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\CMakeFiles\hdfimport_files</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\CMakeFiles\hdfimport_files</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</VerifyInputsAndOutputsExist>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Copying files needed by hdfimport tests</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\hdfimport.input1;.\hdfimport.out1;.\hdfimport.out3;.\SDSfloat2.hdf;.\SDSfloat3.hdf;.\ctxtr2.tst;.\ctxtr3.tst;.\cb32i2.tst;.\cb32i3.tst;.\cb16i2.tst;.\cb16i3.tst;.\cb32r2.tst;.\cb32r3.tst;.\cb64r2.tst;.\cb64r3.tst;.\cb64r2-n.tst;.\cb64r3-n.tst;.\ctxtr2_ris.tst;.\cb64r2_ris.tst;.\SDSfloat2.tst;.\SDSfloat3.tst;.\hdfimport.out2;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\CMakeFiles\hdfimport_files</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Copying files needed by hdfimport tests</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\hdfimport.input1;.\hdfimport.out1;.\hdfimport.out3;.\SDSfloat2.hdf;.\SDSfloat3.hdf;.\ctxtr2.tst;.\ctxtr3.tst;.\cb32i2.tst;.\cb32i3.tst;.\cb16i2.tst;.\cb16i3.tst;.\cb32r2.tst;.\cb32r3.tst;.\cb64r2.tst;.\cb64r3.tst;.\cb64r2-n.tst;.\cb64r3-n.tst;.\ctxtr2_ris.tst;.\cb64r2_ris.tst;.\SDSfloat2.tst;.\SDSfloat3.tst;.\hdfimport.out2;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\CMakeFiles\hdfimport_files</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".\CMakeFiles\hdfimport_files">
+    </None>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

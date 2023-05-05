@@ -1,0 +1,4 @@
+# CMake generation dependency list for this directory.
+N:/Development/Dev_Base/hdf-4.2.16/config/cmake/libhdf4.pc.in
+N:/Development/Dev_Base/hdf-4.2.16/mfhdf/libsrc/CMakeLists.txt
+N:/Development/Dev_Base/hdf-4.2.16/mfhdf/libsrc/netcdf.h.in

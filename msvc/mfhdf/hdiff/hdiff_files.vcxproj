@@ -1,0 +1,2670 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2019_Debug|x64">
+      <Configuration>vs2019_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2019_Release|x64">
+      <Configuration>vs2019_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2022_Debug|x64">
+      <Configuration>vs2022_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2022_Release|x64">
+      <Configuration>vs2022_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1844FAC4-5DB8-3A13-8E8E-83C3778A8578}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>hdiff_files</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\hdf\src;..\..\..\mfhdf\libsrc;..\..\..\;..\..\;..\..\bin;..\..\..\..\$(JPEG_DIR);..\..\..\..\$(ZLIB_DIR);%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\hdf\src;..\..\..\mfhdf\libsrc;..\..\..\;..\..\;..\..\bin;..\..\..\..\$(JPEG_DIR);..\..\..\..\$(ZLIB_DIR);%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\hdf\src;..\..\..\mfhdf\libsrc;..\..\..\;..\..\;..\..\bin;..\..\..\..\$(JPEG_DIR);..\..\..\..\$(ZLIB_DIR);%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\hdf\src;..\..\..\mfhdf\libsrc;..\..\..\;..\..\;..\..\bin;..\..\..\..\$(JPEG_DIR);..\..\..\..\$(ZLIB_DIR);%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\hdf\src;..\..\..\mfhdf\libsrc;..\..\..\;..\..\;..\..\bin;..\..\..\..\$(JPEG_DIR);..\..\..\..\$(ZLIB_DIR);%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\hdf\src;..\..\..\mfhdf\libsrc;..\..\..\;..\..\;..\..\bin;..\..\..\..\$(JPEG_DIR);..\..\..\..\$(ZLIB_DIR);%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\hdf\src;..\..\..\mfhdf\libsrc;..\..\..\;..\..\;..\..\bin;..\..\..\..\$(JPEG_DIR);..\..\..\..\$(ZLIB_DIR);%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\hdf\src;..\..\..\mfhdf\libsrc;..\..\..\;..\..\;..\..\bin;..\..\..\..\$(JPEG_DIR);..\..\..\..\$(ZLIB_DIR);%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\fbeee168ac93dd5f3ae8d607dd2409df\hdiff_01.txt.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating testfiles/hdiff_01.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating testfiles/hdiff_01.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">Generating testfiles/hdiff_01.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_01.txt .\testfiles\hdiff_01.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_01.txt .\testfiles\hdiff_01.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_01.txt .\testfiles\hdiff_01.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_01.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_01.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_01.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\testfiles\hdiff_01.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\testfiles\hdiff_01.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\testfiles\hdiff_01.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating testfiles/hdiff_01.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating testfiles/hdiff_01.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">Generating testfiles/hdiff_01.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_01.txt .\testfiles\hdiff_01.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_01.txt .\testfiles\hdiff_01.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_01.txt .\testfiles\hdiff_01.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_01.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_01.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_01.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\testfiles\hdiff_01.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\testfiles\hdiff_01.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\testfiles\hdiff_01.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating testfiles/hdiff_01.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_01.txt .\testfiles\hdiff_01.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_01.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\testfiles\hdiff_01.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating testfiles/hdiff_01.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_01.txt .\testfiles\hdiff_01.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_01.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\testfiles\hdiff_01.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\fbeee168ac93dd5f3ae8d607dd2409df\hdiff_02.txt.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating testfiles/hdiff_02.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating testfiles/hdiff_02.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">Generating testfiles/hdiff_02.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_02.txt .\testfiles\hdiff_02.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_02.txt .\testfiles\hdiff_02.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_02.txt .\testfiles\hdiff_02.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_02.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_02.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_02.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\testfiles\hdiff_02.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\testfiles\hdiff_02.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\testfiles\hdiff_02.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating testfiles/hdiff_02.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating testfiles/hdiff_02.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">Generating testfiles/hdiff_02.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_02.txt .\testfiles\hdiff_02.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_02.txt .\testfiles\hdiff_02.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_02.txt .\testfiles\hdiff_02.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_02.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_02.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_02.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\testfiles\hdiff_02.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\testfiles\hdiff_02.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\testfiles\hdiff_02.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating testfiles/hdiff_02.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_02.txt .\testfiles\hdiff_02.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_02.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\testfiles\hdiff_02.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating testfiles/hdiff_02.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_02.txt .\testfiles\hdiff_02.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_02.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\testfiles\hdiff_02.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\fbeee168ac93dd5f3ae8d607dd2409df\hdiff_03.txt.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating testfiles/hdiff_03.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating testfiles/hdiff_03.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">Generating testfiles/hdiff_03.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_03.txt .\testfiles\hdiff_03.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_03.txt .\testfiles\hdiff_03.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_03.txt .\testfiles\hdiff_03.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_03.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_03.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_03.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\testfiles\hdiff_03.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\testfiles\hdiff_03.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\testfiles\hdiff_03.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating testfiles/hdiff_03.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating testfiles/hdiff_03.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">Generating testfiles/hdiff_03.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_03.txt .\testfiles\hdiff_03.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_03.txt .\testfiles\hdiff_03.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_03.txt .\testfiles\hdiff_03.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_03.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_03.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_03.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\testfiles\hdiff_03.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\testfiles\hdiff_03.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\testfiles\hdiff_03.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating testfiles/hdiff_03.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_03.txt .\testfiles\hdiff_03.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_03.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\testfiles\hdiff_03.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating testfiles/hdiff_03.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_03.txt .\testfiles\hdiff_03.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_03.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\testfiles\hdiff_03.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\fbeee168ac93dd5f3ae8d607dd2409df\hdiff_04.txt.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating testfiles/hdiff_04.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating testfiles/hdiff_04.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">Generating testfiles/hdiff_04.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_04.txt .\testfiles\hdiff_04.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_04.txt .\testfiles\hdiff_04.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_04.txt .\testfiles\hdiff_04.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_04.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_04.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_04.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\testfiles\hdiff_04.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\testfiles\hdiff_04.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\testfiles\hdiff_04.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating testfiles/hdiff_04.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating testfiles/hdiff_04.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">Generating testfiles/hdiff_04.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_04.txt .\testfiles\hdiff_04.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_04.txt .\testfiles\hdiff_04.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_04.txt .\testfiles\hdiff_04.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_04.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_04.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_04.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\testfiles\hdiff_04.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\testfiles\hdiff_04.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\testfiles\hdiff_04.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating testfiles/hdiff_04.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_04.txt .\testfiles\hdiff_04.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_04.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\testfiles\hdiff_04.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating testfiles/hdiff_04.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_04.txt .\testfiles\hdiff_04.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_04.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\testfiles\hdiff_04.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\fbeee168ac93dd5f3ae8d607dd2409df\hdiff_05.txt.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating testfiles/hdiff_05.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating testfiles/hdiff_05.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">Generating testfiles/hdiff_05.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_05.txt .\testfiles\hdiff_05.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_05.txt .\testfiles\hdiff_05.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_05.txt .\testfiles\hdiff_05.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_05.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_05.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_05.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\testfiles\hdiff_05.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\testfiles\hdiff_05.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\testfiles\hdiff_05.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating testfiles/hdiff_05.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating testfiles/hdiff_05.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">Generating testfiles/hdiff_05.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_05.txt .\testfiles\hdiff_05.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_05.txt .\testfiles\hdiff_05.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_05.txt .\testfiles\hdiff_05.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_05.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_05.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_05.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\testfiles\hdiff_05.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\testfiles\hdiff_05.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\testfiles\hdiff_05.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating testfiles/hdiff_05.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_05.txt .\testfiles\hdiff_05.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_05.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\testfiles\hdiff_05.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating testfiles/hdiff_05.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_05.txt .\testfiles\hdiff_05.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_05.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\testfiles\hdiff_05.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\fbeee168ac93dd5f3ae8d607dd2409df\hdiff_06.txt.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating testfiles/hdiff_06.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating testfiles/hdiff_06.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">Generating testfiles/hdiff_06.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_06.txt .\testfiles\hdiff_06.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_06.txt .\testfiles\hdiff_06.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_06.txt .\testfiles\hdiff_06.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_06.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_06.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_06.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\testfiles\hdiff_06.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\testfiles\hdiff_06.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\testfiles\hdiff_06.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating testfiles/hdiff_06.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating testfiles/hdiff_06.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">Generating testfiles/hdiff_06.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_06.txt .\testfiles\hdiff_06.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_06.txt .\testfiles\hdiff_06.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_06.txt .\testfiles\hdiff_06.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_06.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_06.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_06.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\testfiles\hdiff_06.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\testfiles\hdiff_06.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\testfiles\hdiff_06.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating testfiles/hdiff_06.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_06.txt .\testfiles\hdiff_06.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_06.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\testfiles\hdiff_06.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating testfiles/hdiff_06.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_06.txt .\testfiles\hdiff_06.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_06.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\testfiles\hdiff_06.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\fbeee168ac93dd5f3ae8d607dd2409df\hdiff_07.txt.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating testfiles/hdiff_07.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating testfiles/hdiff_07.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">Generating testfiles/hdiff_07.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_07.txt .\testfiles\hdiff_07.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_07.txt .\testfiles\hdiff_07.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_07.txt .\testfiles\hdiff_07.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_07.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_07.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_07.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\testfiles\hdiff_07.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\testfiles\hdiff_07.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\testfiles\hdiff_07.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating testfiles/hdiff_07.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating testfiles/hdiff_07.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">Generating testfiles/hdiff_07.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_07.txt .\testfiles\hdiff_07.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_07.txt .\testfiles\hdiff_07.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_07.txt .\testfiles\hdiff_07.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_07.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_07.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_07.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\testfiles\hdiff_07.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\testfiles\hdiff_07.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\testfiles\hdiff_07.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating testfiles/hdiff_07.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_07.txt .\testfiles\hdiff_07.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_07.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\testfiles\hdiff_07.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating testfiles/hdiff_07.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_07.txt .\testfiles\hdiff_07.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_07.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\testfiles\hdiff_07.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\fbeee168ac93dd5f3ae8d607dd2409df\hdiff_08.txt.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating testfiles/hdiff_08.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating testfiles/hdiff_08.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">Generating testfiles/hdiff_08.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_08.txt .\testfiles\hdiff_08.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_08.txt .\testfiles\hdiff_08.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_08.txt .\testfiles\hdiff_08.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_08.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_08.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_08.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\testfiles\hdiff_08.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\testfiles\hdiff_08.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\testfiles\hdiff_08.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating testfiles/hdiff_08.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating testfiles/hdiff_08.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">Generating testfiles/hdiff_08.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_08.txt .\testfiles\hdiff_08.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_08.txt .\testfiles\hdiff_08.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_08.txt .\testfiles\hdiff_08.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_08.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_08.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_08.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\testfiles\hdiff_08.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\testfiles\hdiff_08.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\testfiles\hdiff_08.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating testfiles/hdiff_08.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_08.txt .\testfiles\hdiff_08.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_08.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\testfiles\hdiff_08.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating testfiles/hdiff_08.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_08.txt .\testfiles\hdiff_08.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_08.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\testfiles\hdiff_08.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\fbeee168ac93dd5f3ae8d607dd2409df\hdiff_09.txt.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating testfiles/hdiff_09.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating testfiles/hdiff_09.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">Generating testfiles/hdiff_09.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_09.txt .\testfiles\hdiff_09.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_09.txt .\testfiles\hdiff_09.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_09.txt .\testfiles\hdiff_09.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_09.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_09.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_09.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\testfiles\hdiff_09.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\testfiles\hdiff_09.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\testfiles\hdiff_09.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating testfiles/hdiff_09.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating testfiles/hdiff_09.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">Generating testfiles/hdiff_09.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_09.txt .\testfiles\hdiff_09.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_09.txt .\testfiles\hdiff_09.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_09.txt .\testfiles\hdiff_09.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_09.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_09.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_09.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\testfiles\hdiff_09.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\testfiles\hdiff_09.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\testfiles\hdiff_09.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating testfiles/hdiff_09.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_09.txt .\testfiles\hdiff_09.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_09.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\testfiles\hdiff_09.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating testfiles/hdiff_09.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_09.txt .\testfiles\hdiff_09.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_09.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\testfiles\hdiff_09.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\fbeee168ac93dd5f3ae8d607dd2409df\hdiff_10.txt.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating testfiles/hdiff_10.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating testfiles/hdiff_10.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">Generating testfiles/hdiff_10.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_10.txt .\testfiles\hdiff_10.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_10.txt .\testfiles\hdiff_10.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_10.txt .\testfiles\hdiff_10.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_10.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_10.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_10.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\testfiles\hdiff_10.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\testfiles\hdiff_10.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\testfiles\hdiff_10.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating testfiles/hdiff_10.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating testfiles/hdiff_10.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">Generating testfiles/hdiff_10.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_10.txt .\testfiles\hdiff_10.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_10.txt .\testfiles\hdiff_10.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_10.txt .\testfiles\hdiff_10.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_10.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_10.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_10.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\testfiles\hdiff_10.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\testfiles\hdiff_10.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\testfiles\hdiff_10.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating testfiles/hdiff_10.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_10.txt .\testfiles\hdiff_10.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_10.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\testfiles\hdiff_10.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating testfiles/hdiff_10.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_10.txt .\testfiles\hdiff_10.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_10.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\testfiles\hdiff_10.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\fbeee168ac93dd5f3ae8d607dd2409df\hdiff_11.txt.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating testfiles/hdiff_11.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating testfiles/hdiff_11.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">Generating testfiles/hdiff_11.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_11.txt .\testfiles\hdiff_11.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_11.txt .\testfiles\hdiff_11.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_11.txt .\testfiles\hdiff_11.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_11.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_11.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_11.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\testfiles\hdiff_11.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\testfiles\hdiff_11.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\testfiles\hdiff_11.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating testfiles/hdiff_11.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating testfiles/hdiff_11.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">Generating testfiles/hdiff_11.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_11.txt .\testfiles\hdiff_11.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_11.txt .\testfiles\hdiff_11.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_11.txt .\testfiles\hdiff_11.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_11.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_11.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_11.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\testfiles\hdiff_11.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\testfiles\hdiff_11.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\testfiles\hdiff_11.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating testfiles/hdiff_11.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_11.txt .\testfiles\hdiff_11.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_11.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\testfiles\hdiff_11.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating testfiles/hdiff_11.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_11.txt .\testfiles\hdiff_11.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_11.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\testfiles\hdiff_11.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\fbeee168ac93dd5f3ae8d607dd2409df\hdiff_12.txt.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating testfiles/hdiff_12.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating testfiles/hdiff_12.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">Generating testfiles/hdiff_12.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_12.txt .\testfiles\hdiff_12.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_12.txt .\testfiles\hdiff_12.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_12.txt .\testfiles\hdiff_12.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_12.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_12.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_12.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\testfiles\hdiff_12.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\testfiles\hdiff_12.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\testfiles\hdiff_12.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating testfiles/hdiff_12.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating testfiles/hdiff_12.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">Generating testfiles/hdiff_12.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_12.txt .\testfiles\hdiff_12.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_12.txt .\testfiles\hdiff_12.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_12.txt .\testfiles\hdiff_12.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_12.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_12.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_12.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\testfiles\hdiff_12.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\testfiles\hdiff_12.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\testfiles\hdiff_12.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating testfiles/hdiff_12.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_12.txt .\testfiles\hdiff_12.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_12.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\testfiles\hdiff_12.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating testfiles/hdiff_12.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_12.txt .\testfiles\hdiff_12.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_12.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\testfiles\hdiff_12.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\fbeee168ac93dd5f3ae8d607dd2409df\hdiff_13.txt.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating testfiles/hdiff_13.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating testfiles/hdiff_13.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">Generating testfiles/hdiff_13.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_13.txt .\testfiles\hdiff_13.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_13.txt .\testfiles\hdiff_13.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_13.txt .\testfiles\hdiff_13.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_13.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_13.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_13.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\testfiles\hdiff_13.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\testfiles\hdiff_13.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\testfiles\hdiff_13.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating testfiles/hdiff_13.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating testfiles/hdiff_13.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">Generating testfiles/hdiff_13.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_13.txt .\testfiles\hdiff_13.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_13.txt .\testfiles\hdiff_13.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_13.txt .\testfiles\hdiff_13.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_13.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_13.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_13.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\testfiles\hdiff_13.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\testfiles\hdiff_13.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\testfiles\hdiff_13.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating testfiles/hdiff_13.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_13.txt .\testfiles\hdiff_13.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_13.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\testfiles\hdiff_13.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating testfiles/hdiff_13.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_13.txt .\testfiles\hdiff_13.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_13.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\testfiles\hdiff_13.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\fbeee168ac93dd5f3ae8d607dd2409df\hdiff_14.txt.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating testfiles/hdiff_14.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating testfiles/hdiff_14.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">Generating testfiles/hdiff_14.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_14.txt .\testfiles\hdiff_14.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_14.txt .\testfiles\hdiff_14.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_14.txt .\testfiles\hdiff_14.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_14.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_14.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_14.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\testfiles\hdiff_14.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\testfiles\hdiff_14.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\testfiles\hdiff_14.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating testfiles/hdiff_14.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating testfiles/hdiff_14.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">Generating testfiles/hdiff_14.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_14.txt .\testfiles\hdiff_14.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_14.txt .\testfiles\hdiff_14.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_14.txt .\testfiles\hdiff_14.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_14.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_14.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_14.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\testfiles\hdiff_14.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\testfiles\hdiff_14.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\testfiles\hdiff_14.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating testfiles/hdiff_14.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_14.txt .\testfiles\hdiff_14.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_14.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\testfiles\hdiff_14.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating testfiles/hdiff_14.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_14.txt .\testfiles\hdiff_14.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_14.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\testfiles\hdiff_14.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\fbeee168ac93dd5f3ae8d607dd2409df\hdiff_15.txt.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating testfiles/hdiff_15.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating testfiles/hdiff_15.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">Generating testfiles/hdiff_15.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_15.txt .\testfiles\hdiff_15.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_15.txt .\testfiles\hdiff_15.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_15.txt .\testfiles\hdiff_15.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_15.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_15.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_15.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\testfiles\hdiff_15.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\testfiles\hdiff_15.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\testfiles\hdiff_15.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating testfiles/hdiff_15.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating testfiles/hdiff_15.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">Generating testfiles/hdiff_15.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_15.txt .\testfiles\hdiff_15.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_15.txt .\testfiles\hdiff_15.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_15.txt .\testfiles\hdiff_15.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_15.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_15.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_15.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\testfiles\hdiff_15.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\testfiles\hdiff_15.txt</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\testfiles\hdiff_15.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating testfiles/hdiff_15.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_15.txt .\testfiles\hdiff_15.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_15.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\testfiles\hdiff_15.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating testfiles/hdiff_15.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdiff_15.txt .\testfiles\hdiff_15.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\..\mfhdf\hdiff\testfiles\hdiff_15.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\testfiles\hdiff_15.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\fbeee168ac93dd5f3ae8d607dd2409df\hdifftst1.hdf.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating testfiles/hdifftst1.hdf</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating testfiles/hdifftst1.hdf</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">Generating testfiles/hdifftst1.hdf</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst1.hdf .\testfiles\hdifftst1.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst1.hdf .\testfiles\hdifftst1.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst1.hdf .\testfiles\hdifftst1.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst1.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst1.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst1.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\testfiles\hdifftst1.hdf</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\testfiles\hdifftst1.hdf</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\testfiles\hdifftst1.hdf</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating testfiles/hdifftst1.hdf</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating testfiles/hdifftst1.hdf</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">Generating testfiles/hdifftst1.hdf</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst1.hdf .\testfiles\hdifftst1.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst1.hdf .\testfiles\hdifftst1.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst1.hdf .\testfiles\hdifftst1.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst1.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst1.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst1.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\testfiles\hdifftst1.hdf</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\testfiles\hdifftst1.hdf</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\testfiles\hdifftst1.hdf</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating testfiles/hdifftst1.hdf</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst1.hdf .\testfiles\hdifftst1.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst1.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\testfiles\hdifftst1.hdf</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating testfiles/hdifftst1.hdf</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst1.hdf .\testfiles\hdifftst1.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst1.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\testfiles\hdifftst1.hdf</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\fbeee168ac93dd5f3ae8d607dd2409df\hdifftst2.hdf.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating testfiles/hdifftst2.hdf</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating testfiles/hdifftst2.hdf</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">Generating testfiles/hdifftst2.hdf</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst2.hdf .\testfiles\hdifftst2.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst2.hdf .\testfiles\hdifftst2.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst2.hdf .\testfiles\hdifftst2.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst2.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst2.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst2.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\testfiles\hdifftst2.hdf</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\testfiles\hdifftst2.hdf</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\testfiles\hdifftst2.hdf</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating testfiles/hdifftst2.hdf</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating testfiles/hdifftst2.hdf</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">Generating testfiles/hdifftst2.hdf</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst2.hdf .\testfiles\hdifftst2.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst2.hdf .\testfiles\hdifftst2.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst2.hdf .\testfiles\hdifftst2.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst2.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst2.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst2.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\testfiles\hdifftst2.hdf</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\testfiles\hdifftst2.hdf</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\testfiles\hdifftst2.hdf</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating testfiles/hdifftst2.hdf</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst2.hdf .\testfiles\hdifftst2.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst2.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\testfiles\hdifftst2.hdf</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating testfiles/hdifftst2.hdf</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst2.hdf .\testfiles\hdifftst2.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst2.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\testfiles\hdifftst2.hdf</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\fbeee168ac93dd5f3ae8d607dd2409df\hdifftst3.hdf.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating testfiles/hdifftst3.hdf</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating testfiles/hdifftst3.hdf</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">Generating testfiles/hdifftst3.hdf</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst3.hdf .\testfiles\hdifftst3.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst3.hdf .\testfiles\hdifftst3.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst3.hdf .\testfiles\hdifftst3.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst3.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst3.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst3.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\testfiles\hdifftst3.hdf</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\testfiles\hdifftst3.hdf</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\testfiles\hdifftst3.hdf</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating testfiles/hdifftst3.hdf</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating testfiles/hdifftst3.hdf</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">Generating testfiles/hdifftst3.hdf</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst3.hdf .\testfiles\hdifftst3.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst3.hdf .\testfiles\hdifftst3.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst3.hdf .\testfiles\hdifftst3.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst3.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst3.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst3.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\testfiles\hdifftst3.hdf</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\testfiles\hdifftst3.hdf</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\testfiles\hdifftst3.hdf</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating testfiles/hdifftst3.hdf</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst3.hdf .\testfiles\hdifftst3.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst3.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\testfiles\hdifftst3.hdf</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating testfiles/hdifftst3.hdf</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst3.hdf .\testfiles\hdifftst3.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst3.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\testfiles\hdifftst3.hdf</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\fbeee168ac93dd5f3ae8d607dd2409df\hdifftst4.hdf.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating testfiles/hdifftst4.hdf</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating testfiles/hdifftst4.hdf</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">Generating testfiles/hdifftst4.hdf</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst4.hdf .\testfiles\hdifftst4.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst4.hdf .\testfiles\hdifftst4.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst4.hdf .\testfiles\hdifftst4.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst4.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst4.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst4.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\testfiles\hdifftst4.hdf</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\testfiles\hdifftst4.hdf</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\testfiles\hdifftst4.hdf</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating testfiles/hdifftst4.hdf</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating testfiles/hdifftst4.hdf</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">Generating testfiles/hdifftst4.hdf</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst4.hdf .\testfiles\hdifftst4.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst4.hdf .\testfiles\hdifftst4.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst4.hdf .\testfiles\hdifftst4.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst4.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst4.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst4.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\testfiles\hdifftst4.hdf</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\testfiles\hdifftst4.hdf</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\testfiles\hdifftst4.hdf</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating testfiles/hdifftst4.hdf</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst4.hdf .\testfiles\hdifftst4.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst4.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\testfiles\hdifftst4.hdf</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating testfiles/hdifftst4.hdf</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst4.hdf .\testfiles\hdifftst4.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst4.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\testfiles\hdifftst4.hdf</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\fbeee168ac93dd5f3ae8d607dd2409df\hdifftst5.hdf.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating testfiles/hdifftst5.hdf</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating testfiles/hdifftst5.hdf</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">Generating testfiles/hdifftst5.hdf</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst5.hdf .\testfiles\hdifftst5.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst5.hdf .\testfiles\hdifftst5.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst5.hdf .\testfiles\hdifftst5.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst5.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst5.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst5.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\testfiles\hdifftst5.hdf</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\testfiles\hdifftst5.hdf</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\testfiles\hdifftst5.hdf</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating testfiles/hdifftst5.hdf</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating testfiles/hdifftst5.hdf</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">Generating testfiles/hdifftst5.hdf</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst5.hdf .\testfiles\hdifftst5.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst5.hdf .\testfiles\hdifftst5.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst5.hdf .\testfiles\hdifftst5.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst5.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst5.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst5.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\testfiles\hdifftst5.hdf</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\testfiles\hdifftst5.hdf</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\testfiles\hdifftst5.hdf</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating testfiles/hdifftst5.hdf</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst5.hdf .\testfiles\hdifftst5.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst5.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\testfiles\hdifftst5.hdf</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating testfiles/hdifftst5.hdf</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst5.hdf .\testfiles\hdifftst5.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst5.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\testfiles\hdifftst5.hdf</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\fbeee168ac93dd5f3ae8d607dd2409df\hdifftst6.hdf.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating testfiles/hdifftst6.hdf</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating testfiles/hdifftst6.hdf</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">Generating testfiles/hdifftst6.hdf</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst6.hdf .\testfiles\hdifftst6.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst6.hdf .\testfiles\hdifftst6.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst6.hdf .\testfiles\hdifftst6.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst6.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst6.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst6.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\testfiles\hdifftst6.hdf</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\testfiles\hdifftst6.hdf</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\testfiles\hdifftst6.hdf</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating testfiles/hdifftst6.hdf</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating testfiles/hdifftst6.hdf</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">Generating testfiles/hdifftst6.hdf</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst6.hdf .\testfiles\hdifftst6.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst6.hdf .\testfiles\hdifftst6.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst6.hdf .\testfiles\hdifftst6.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst6.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst6.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst6.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\testfiles\hdifftst6.hdf</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\testfiles\hdifftst6.hdf</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\testfiles\hdifftst6.hdf</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating testfiles/hdifftst6.hdf</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst6.hdf .\testfiles\hdifftst6.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst6.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\testfiles\hdifftst6.hdf</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating testfiles/hdifftst6.hdf</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst6.hdf .\testfiles\hdifftst6.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst6.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\testfiles\hdifftst6.hdf</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\fbeee168ac93dd5f3ae8d607dd2409df\hdifftst7.hdf.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating testfiles/hdifftst7.hdf</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating testfiles/hdifftst7.hdf</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">Generating testfiles/hdifftst7.hdf</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst7.hdf .\testfiles\hdifftst7.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst7.hdf .\testfiles\hdifftst7.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst7.hdf .\testfiles\hdifftst7.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst7.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst7.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst7.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\testfiles\hdifftst7.hdf</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\testfiles\hdifftst7.hdf</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\testfiles\hdifftst7.hdf</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating testfiles/hdifftst7.hdf</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating testfiles/hdifftst7.hdf</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">Generating testfiles/hdifftst7.hdf</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst7.hdf .\testfiles\hdifftst7.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst7.hdf .\testfiles\hdifftst7.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst7.hdf .\testfiles\hdifftst7.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst7.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst7.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst7.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\testfiles\hdifftst7.hdf</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\testfiles\hdifftst7.hdf</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\testfiles\hdifftst7.hdf</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating testfiles/hdifftst7.hdf</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst7.hdf .\testfiles\hdifftst7.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst7.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\testfiles\hdifftst7.hdf</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating testfiles/hdifftst7.hdf</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E copy_if_different ..\..\..\mfhdf\hdiff\testfiles\hdifftst7.hdf .\testfiles\hdifftst7.hdf
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\..\mfhdf\hdiff\testfiles\hdifftst7.hdf;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\testfiles\hdifftst7.hdf</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\ffa81b4a9402555eb30560f75879afc9\hdiff_files.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Copying files needed by hdiff tests</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Copying files needed by hdiff tests</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">Copying files needed by hdiff tests</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\testfiles\hdifftst1.hdf;.\testfiles\hdifftst2.hdf;.\testfiles\hdifftst3.hdf;.\testfiles\hdifftst4.hdf;.\testfiles\hdifftst5.hdf;.\testfiles\hdifftst6.hdf;.\testfiles\hdifftst7.hdf;.\testfiles\hdiff_01.txt;.\testfiles\hdiff_02.txt;.\testfiles\hdiff_03.txt;.\testfiles\hdiff_04.txt;.\testfiles\hdiff_05.txt;.\testfiles\hdiff_07.txt;.\testfiles\hdiff_08.txt;.\testfiles\hdiff_09.txt;.\testfiles\hdiff_10.txt;.\testfiles\hdiff_11.txt;.\testfiles\hdiff_12.txt;.\testfiles\hdiff_13.txt;.\testfiles\hdiff_14.txt;.\testfiles\hdiff_15.txt;.\testfiles\hdiff_06.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\testfiles\hdifftst1.hdf;.\testfiles\hdifftst2.hdf;.\testfiles\hdifftst3.hdf;.\testfiles\hdifftst4.hdf;.\testfiles\hdifftst5.hdf;.\testfiles\hdifftst6.hdf;.\testfiles\hdifftst7.hdf;.\testfiles\hdiff_01.txt;.\testfiles\hdiff_02.txt;.\testfiles\hdiff_03.txt;.\testfiles\hdiff_04.txt;.\testfiles\hdiff_05.txt;.\testfiles\hdiff_07.txt;.\testfiles\hdiff_08.txt;.\testfiles\hdiff_09.txt;.\testfiles\hdiff_10.txt;.\testfiles\hdiff_11.txt;.\testfiles\hdiff_12.txt;.\testfiles\hdiff_13.txt;.\testfiles\hdiff_14.txt;.\testfiles\hdiff_15.txt;.\testfiles\hdiff_06.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\testfiles\hdifftst1.hdf;.\testfiles\hdifftst2.hdf;.\testfiles\hdifftst3.hdf;.\testfiles\hdifftst4.hdf;.\testfiles\hdifftst5.hdf;.\testfiles\hdifftst6.hdf;.\testfiles\hdifftst7.hdf;.\testfiles\hdiff_01.txt;.\testfiles\hdiff_02.txt;.\testfiles\hdiff_03.txt;.\testfiles\hdiff_04.txt;.\testfiles\hdiff_05.txt;.\testfiles\hdiff_07.txt;.\testfiles\hdiff_08.txt;.\testfiles\hdiff_09.txt;.\testfiles\hdiff_10.txt;.\testfiles\hdiff_11.txt;.\testfiles\hdiff_12.txt;.\testfiles\hdiff_13.txt;.\testfiles\hdiff_14.txt;.\testfiles\hdiff_15.txt;.\testfiles\hdiff_06.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\CMakeFiles\hdiff_files</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\CMakeFiles\hdiff_files</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.\CMakeFiles\hdiff_files</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Copying files needed by hdiff tests</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Copying files needed by hdiff tests</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">Copying files needed by hdiff tests</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\testfiles\hdifftst1.hdf;.\testfiles\hdifftst2.hdf;.\testfiles\hdifftst3.hdf;.\testfiles\hdifftst4.hdf;.\testfiles\hdifftst5.hdf;.\testfiles\hdifftst6.hdf;.\testfiles\hdifftst7.hdf;.\testfiles\hdiff_01.txt;.\testfiles\hdiff_02.txt;.\testfiles\hdiff_03.txt;.\testfiles\hdiff_04.txt;.\testfiles\hdiff_05.txt;.\testfiles\hdiff_07.txt;.\testfiles\hdiff_08.txt;.\testfiles\hdiff_09.txt;.\testfiles\hdiff_10.txt;.\testfiles\hdiff_11.txt;.\testfiles\hdiff_12.txt;.\testfiles\hdiff_13.txt;.\testfiles\hdiff_14.txt;.\testfiles\hdiff_15.txt;.\testfiles\hdiff_06.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\testfiles\hdifftst1.hdf;.\testfiles\hdifftst2.hdf;.\testfiles\hdifftst3.hdf;.\testfiles\hdifftst4.hdf;.\testfiles\hdifftst5.hdf;.\testfiles\hdifftst6.hdf;.\testfiles\hdifftst7.hdf;.\testfiles\hdiff_01.txt;.\testfiles\hdiff_02.txt;.\testfiles\hdiff_03.txt;.\testfiles\hdiff_04.txt;.\testfiles\hdiff_05.txt;.\testfiles\hdiff_07.txt;.\testfiles\hdiff_08.txt;.\testfiles\hdiff_09.txt;.\testfiles\hdiff_10.txt;.\testfiles\hdiff_11.txt;.\testfiles\hdiff_12.txt;.\testfiles\hdiff_13.txt;.\testfiles\hdiff_14.txt;.\testfiles\hdiff_15.txt;.\testfiles\hdiff_06.txt;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\testfiles\hdifftst1.hdf;.\testfiles\hdifftst2.hdf;.\testfiles\hdifftst3.hdf;.\testfiles\hdifftst4.hdf;.\testfiles\hdifftst5.hdf;.\testfiles\hdifftst6.hdf;.\testfiles\hdifftst7.hdf;.\testfiles\hdiff_01.txt;.\testfiles\hdiff_02.txt;.\testfiles\hdiff_03.txt;.\testfiles\hdiff_04.txt;.\testfiles\hdiff_05.txt;.\testfiles\hdiff_07.txt;.\testfiles\hdiff_08.txt;.\testfiles\hdiff_09.txt;.\testfiles\hdiff_10.txt;.\testfiles\hdiff_11.txt;.\testfiles\hdiff_12.txt;.\testfiles\hdiff_13.txt;.\testfiles\hdiff_14.txt;.\testfiles\hdiff_15.txt;.\testfiles\hdiff_06.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\CMakeFiles\hdiff_files</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\CMakeFiles\hdiff_files</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.\CMakeFiles\hdiff_files</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</VerifyInputsAndOutputsExist>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Copying files needed by hdiff tests</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\testfiles\hdifftst1.hdf;.\testfiles\hdifftst2.hdf;.\testfiles\hdifftst3.hdf;.\testfiles\hdifftst4.hdf;.\testfiles\hdifftst5.hdf;.\testfiles\hdifftst6.hdf;.\testfiles\hdifftst7.hdf;.\testfiles\hdiff_01.txt;.\testfiles\hdiff_02.txt;.\testfiles\hdiff_03.txt;.\testfiles\hdiff_04.txt;.\testfiles\hdiff_05.txt;.\testfiles\hdiff_07.txt;.\testfiles\hdiff_08.txt;.\testfiles\hdiff_09.txt;.\testfiles\hdiff_10.txt;.\testfiles\hdiff_11.txt;.\testfiles\hdiff_12.txt;.\testfiles\hdiff_13.txt;.\testfiles\hdiff_14.txt;.\testfiles\hdiff_15.txt;.\testfiles\hdiff_06.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\CMakeFiles\hdiff_files</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Copying files needed by hdiff tests</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\testfiles\hdifftst1.hdf;.\testfiles\hdifftst2.hdf;.\testfiles\hdifftst3.hdf;.\testfiles\hdifftst4.hdf;.\testfiles\hdifftst5.hdf;.\testfiles\hdifftst6.hdf;.\testfiles\hdifftst7.hdf;.\testfiles\hdiff_01.txt;.\testfiles\hdiff_02.txt;.\testfiles\hdiff_03.txt;.\testfiles\hdiff_04.txt;.\testfiles\hdiff_05.txt;.\testfiles\hdiff_07.txt;.\testfiles\hdiff_08.txt;.\testfiles\hdiff_09.txt;.\testfiles\hdiff_10.txt;.\testfiles\hdiff_11.txt;.\testfiles\hdiff_12.txt;.\testfiles\hdiff_13.txt;.\testfiles\hdiff_14.txt;.\testfiles\hdiff_15.txt;.\testfiles\hdiff_06.txt;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\CMakeFiles\hdiff_files</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".\CMakeFiles\hdiff_files">
+    </None>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\3ae529137b847ceb74039a7135bbc22b\test0.cdl.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\a29f8f15d06060740bfb3674c9428afa\ncgen_files.rule" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".\CMakeFiles\ncgen_files" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{C306D657-E310-3A7A-8430-9168497403D5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

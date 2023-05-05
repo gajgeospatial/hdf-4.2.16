@@ -1,0 +1,10 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.20/Modules/CMakeCXXInformation.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/Compiler/MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/Platform/Windows-MSVC.cmake
+N:/Development/Dev_Base/hdf-4.2.16/mfhdf/CMakeLists.txt
+N:/Development/Dev_Base/hdf-4.2.16/msvc/CMakeFiles/3.20.0/CMakeCXXCompiler.cmake

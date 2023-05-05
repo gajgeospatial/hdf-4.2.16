@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\fbeee168ac93dd5f3ae8d607dd2409df\hdiff_01.txt.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\fbeee168ac93dd5f3ae8d607dd2409df\hdiff_02.txt.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\fbeee168ac93dd5f3ae8d607dd2409df\hdiff_03.txt.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\fbeee168ac93dd5f3ae8d607dd2409df\hdiff_04.txt.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\fbeee168ac93dd5f3ae8d607dd2409df\hdiff_05.txt.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\fbeee168ac93dd5f3ae8d607dd2409df\hdiff_06.txt.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\fbeee168ac93dd5f3ae8d607dd2409df\hdiff_07.txt.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\fbeee168ac93dd5f3ae8d607dd2409df\hdiff_08.txt.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\fbeee168ac93dd5f3ae8d607dd2409df\hdiff_09.txt.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\fbeee168ac93dd5f3ae8d607dd2409df\hdiff_10.txt.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\fbeee168ac93dd5f3ae8d607dd2409df\hdiff_11.txt.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\fbeee168ac93dd5f3ae8d607dd2409df\hdiff_12.txt.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\fbeee168ac93dd5f3ae8d607dd2409df\hdiff_13.txt.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\fbeee168ac93dd5f3ae8d607dd2409df\hdiff_14.txt.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\fbeee168ac93dd5f3ae8d607dd2409df\hdiff_15.txt.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\fbeee168ac93dd5f3ae8d607dd2409df\hdifftst1.hdf.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\fbeee168ac93dd5f3ae8d607dd2409df\hdifftst2.hdf.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\fbeee168ac93dd5f3ae8d607dd2409df\hdifftst3.hdf.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\fbeee168ac93dd5f3ae8d607dd2409df\hdifftst4.hdf.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\fbeee168ac93dd5f3ae8d607dd2409df\hdifftst5.hdf.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\fbeee168ac93dd5f3ae8d607dd2409df\hdifftst6.hdf.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\fbeee168ac93dd5f3ae8d607dd2409df\hdifftst7.hdf.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\ffa81b4a9402555eb30560f75879afc9\hdiff_files.rule" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".\CMakeFiles\hdiff_files" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{C306D657-E310-3A7A-8430-9168497403D5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

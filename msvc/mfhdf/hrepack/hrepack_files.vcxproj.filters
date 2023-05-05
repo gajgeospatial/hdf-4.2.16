@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\5f13069beccdc8d2e99601fdc6a66aa2\hrepack_check_help.txt.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\5f13069beccdc8d2e99601fdc6a66aa2\hrepack_help.txt.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\5f13069beccdc8d2e99601fdc6a66aa2\image24pixel.txt.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\5f13069beccdc8d2e99601fdc6a66aa2\image24plane.txt.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\5f13069beccdc8d2e99601fdc6a66aa2\image8.txt.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\5f13069beccdc8d2e99601fdc6a66aa2\info.txt.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\5178fdc20d8af8b57d288cb8b7233383\hrepack_files.rule" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".\CMakeFiles\hrepack_files" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{C306D657-E310-3A7A-8430-9168497403D5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

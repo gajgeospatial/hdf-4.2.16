@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\21ec58d88d906f096cd7cb625939ae2f\SDSfloat2.hdf.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\21ec58d88d906f096cd7cb625939ae2f\SDSfloat2.tst.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\21ec58d88d906f096cd7cb625939ae2f\SDSfloat3.hdf.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\21ec58d88d906f096cd7cb625939ae2f\SDSfloat3.tst.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\21ec58d88d906f096cd7cb625939ae2f\cb16i2.tst.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\21ec58d88d906f096cd7cb625939ae2f\cb16i3.tst.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\21ec58d88d906f096cd7cb625939ae2f\cb32i2.tst.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\21ec58d88d906f096cd7cb625939ae2f\cb32i3.tst.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\21ec58d88d906f096cd7cb625939ae2f\cb32r2.tst.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\21ec58d88d906f096cd7cb625939ae2f\cb32r3.tst.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\21ec58d88d906f096cd7cb625939ae2f\cb64r2-n.tst.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\21ec58d88d906f096cd7cb625939ae2f\cb64r2.tst.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\21ec58d88d906f096cd7cb625939ae2f\cb64r2_ris.tst.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\21ec58d88d906f096cd7cb625939ae2f\cb64r3-n.tst.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\21ec58d88d906f096cd7cb625939ae2f\cb64r3.tst.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\21ec58d88d906f096cd7cb625939ae2f\ctxtr2.tst.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\21ec58d88d906f096cd7cb625939ae2f\ctxtr2_ris.tst.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\21ec58d88d906f096cd7cb625939ae2f\ctxtr3.tst.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\21ec58d88d906f096cd7cb625939ae2f\hdfimport.input1.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\21ec58d88d906f096cd7cb625939ae2f\hdfimport.out1.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\21ec58d88d906f096cd7cb625939ae2f\hdfimport.out2.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\21ec58d88d906f096cd7cb625939ae2f\hdfimport.out3.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\903c20d5f434bb91ed079f1f0eff5207\hdfimport_files.rule" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".\CMakeFiles\hdfimport_files" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{C306D657-E310-3A7A-8430-9168497403D5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

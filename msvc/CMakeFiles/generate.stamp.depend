@@ -1,0 +1,61 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.20/Modules/CMakeCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CMakeInitializeConfigs.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CMakePackageConfigHelpers.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CPack.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CPackComponent.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CTest.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CTestTargets.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CTestUseLaunchers.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CheckCXXSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CheckFunctionExists.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CheckIncludeFileCXX.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CheckIncludeFiles.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CheckLibraryExists.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CheckStructHasMember.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CheckSymbolExists.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CheckTypeSize.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CheckVariableExists.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/Compiler/MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/DartConfiguration.tcl.in
+C:/Program Files/CMake/share/cmake-3.20/Modules/ExternalProject.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/FetchContent.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/FindJPEG.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/FindZLIB.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/InstallRequiredSystemLibraries.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/Internal/CheckSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/Platform/Windows.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/Platform/WindowsPaths.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/TestBigEndian.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/WriteBasicConfigVersionFile.cmake
+C:/Program Files/CMake/share/cmake-3.20/Templates/CPackConfig.cmake.in
+N:/Development/Dev_Base/hdf-4.2.16/CMakeFilters.cmake
+N:/Development/Dev_Base/hdf-4.2.16/CMakeInstallation.cmake
+N:/Development/Dev_Base/hdf-4.2.16/CMakeLists.txt
+N:/Development/Dev_Base/hdf-4.2.16/COPYING
+N:/Development/Dev_Base/hdf-4.2.16/CTestConfig.cmake
+N:/Development/Dev_Base/hdf-4.2.16/UserMacros.cmake
+N:/Development/Dev_Base/hdf-4.2.16/config/cmake/ConfigureChecks.cmake
+N:/Development/Dev_Base/hdf-4.2.16/config/cmake/HDF4Macros.cmake
+N:/Development/Dev_Base/hdf-4.2.16/config/cmake/HDFCompilerFlags.cmake
+N:/Development/Dev_Base/hdf-4.2.16/config/cmake/HDFLibMacros.cmake
+N:/Development/Dev_Base/hdf-4.2.16/config/cmake/HDFMacros.cmake
+N:/Development/Dev_Base/hdf-4.2.16/config/cmake/README.txt.cmake.in
+N:/Development/Dev_Base/hdf-4.2.16/config/cmake/h4config.h.in
+N:/Development/Dev_Base/hdf-4.2.16/config/cmake/hdf4-config-version.cmake.in
+N:/Development/Dev_Base/hdf-4.2.16/config/cmake/hdf4-config.cmake.in
+N:/Development/Dev_Base/hdf-4.2.16/config/cmake/libhdf4.settings.cmake.in
+N:/Development/Dev_Base/hdf-4.2.16/msvc/CMakeFiles/3.20.0/CMakeCCompiler.cmake
+N:/Development/Dev_Base/hdf-4.2.16/msvc/CMakeFiles/3.20.0/CMakeRCCompiler.cmake
+N:/Development/Dev_Base/hdf-4.2.16/msvc/CMakeFiles/3.20.0/CMakeSystem.cmake

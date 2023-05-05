@@ -1,0 +1,14 @@
+prefix=C:/Program Files/HDF_Group/HDF/4.2.16
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: hdf
+Description: HDF (Hierarchical Data Format 4) Software Library
+Version: 4.2.16
+
+Cflags: -I${includedir}
+Libs: -L${libdir}  -lhdf -lmfhdf
+Requires: 
+Libs.private:  -lhdf -lmfhdf  -lN:/Development/Dev_Base/jpeg-9c/vc143/x64/vs2022_Release/jpeg.lib -lN:/Development/Dev_Base/zlib-1.2.11/vc143/x64/vs2022_Release/zlib.lib
+Requires.private: 

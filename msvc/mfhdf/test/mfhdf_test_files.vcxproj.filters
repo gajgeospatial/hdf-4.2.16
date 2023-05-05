@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\dc10a45d5c48179076c532489aacdc18\Roy-64.nc.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\dc10a45d5c48179076c532489aacdc18\Roy.nc.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\dc10a45d5c48179076c532489aacdc18\sds_szipped.dat.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\dc10a45d5c48179076c532489aacdc18\smallslice.0000.nc.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\dc10a45d5c48179076c532489aacdc18\test1.nc.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\dc10a45d5c48179076c532489aacdc18\testout.sav.rule" />
+    <CustomBuild Include="..\..\CMakeFiles\e43325cef049f1ea53be43efcc922a39\mfhdf_test_files.rule" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".\CMakeFiles\mfhdf_test_files" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{C306D657-E310-3A7A-8430-9168497403D5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
